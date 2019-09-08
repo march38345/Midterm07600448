@@ -30,13 +30,16 @@ public class Login_Activity extends AppCompatActivity {
                     Intent intent = new Intent(Login_Activity.this,Profile_Activity.class);
                     intent.putExtra("key",R.string.chaitawat);
                     startActivity(intent);
-
+                    Toast toast = Toast.makeText(Login_Activity.this,"welcome"+" "+R.string.chaitawat,Toast.LENGTH_SHORT);
+                    toast.show();
 
                 }
                else if(model.sheck()==2){
                     Intent intent = new Intent(Login_Activity.this,Profile_Activity.class);
                     intent.putExtra("key",R.string.Prom);
                     startActivity(intent);
+                    Toast toast = Toast.makeText(Login_Activity.this,"welcome"+" "+R.string.Prom,Toast.LENGTH_SHORT);
+                    toast.show();
                 }
                else{
                     Toast toast = Toast.makeText(Login_Activity.this,"Invalid username or password",Toast.LENGTH_SHORT);
